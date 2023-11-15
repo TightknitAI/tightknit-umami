@@ -1,12 +1,12 @@
-import { Metadata } from 'next';
-import Providers from './Providers';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/700.css';
 import '@fontsource/inter/800.css';
+import { Metadata } from 'next';
 import 'react-basics/dist/styles.css';
-import 'styles/locale.css';
 import 'styles/index.css';
+import 'styles/locale.css';
 import 'styles/variables.css';
+import Providers from './Providers';
 
 export default function RootLayout({ children }) {
   return (
@@ -32,5 +32,5 @@ export default function RootLayout({ children }) {
 }
 
 export const metadata: Metadata = {
-  title: 'umami',
+  title: 'tightknit analytics | powered by umami',
 };

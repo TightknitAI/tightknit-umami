@@ -1,14 +1,13 @@
 'use client';
-import { Icon, Text } from 'react-basics';
-import Link from 'next/link';
 import classNames from 'classnames';
-import Icons from 'components/icons';
-import ThemeButton from 'components/input/ThemeButton';
+import HamburgerButton from 'components/common/HamburgerButton';
+import useMessages from 'components/hooks/useMessages';
 import LanguageButton from 'components/input/LanguageButton';
 import ProfileButton from 'components/input/ProfileButton';
-import useMessages from 'components/hooks/useMessages';
-import HamburgerButton from 'components/common/HamburgerButton';
+import ThemeButton from 'components/input/ThemeButton';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { Text } from 'react-basics';
 import styles from './NavBar.module.css';
 
 export function NavBar() {
@@ -25,10 +24,10 @@ export function NavBar() {
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
-        <Icon size="lg">
+        {/* <Icon size="lg">
           <Icons.Logo />
-        </Icon>
-        <Text>umami</Text>
+        </Icon> */}
+        <Text>Tightknit Analytics</Text>
       </div>
       <div className={styles.links}>
         {links.map(({ url, label }) => {
