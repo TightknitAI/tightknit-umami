@@ -6,5 +6,5 @@ export default function DashboardPage() {
 }
 
 export const metadata: Metadata = {
-  title: 'Dashboard | umami',
+  title: 'Dashboard | Tightknit analytics | powered by umami',
 };
